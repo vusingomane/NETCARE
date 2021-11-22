@@ -1,0 +1,92 @@
+﻿@model IEnumerable<NetCare.Domain.Model.Doctor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (Model != null)
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <form asp-controller="Doctor" asp-action="Index" method="get">
+        <p>
+            <input type="text" name="SearchString" />
+            <input type="submit" value="Search" />
+        </p>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TitleName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Firstname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lastname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HPCSANo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IDNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Discipline)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Province)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Region)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TitleName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Firstname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HPCSANo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IDNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Discipline)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Province)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Region)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-IDNo="@item.IDNo">Edit</a> |
+                        <a asp-action="Details" asp-route-IDNo="@item.IDNo">Details</a> |
+                        <a asp-action="Delete" asp-route-IDNo="@item.IDNo">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>
+        <h4>Please login first</h4>
+    </p>
+}

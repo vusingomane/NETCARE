@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCare", "NetCare.csproj", "{A2CD27E3-B990-452C-A5D3-6BDB7ECEC515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCare.Data", "NetCare.Data", "{E608CAA4-89EC-4BE8-8288-92E298A4AB47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCare.Data", "..\NetCare.Data\NetCare.Data.csproj", "{F5CBAF5A-4341-4C67-B444-108B51B1B961}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCare.Domain.Models", "NetCare.Domain.Models", "{84DB2425-56AD-4052-B5F9-6D0A04279115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCare.Domain.Model", "..\NetCare.Domain.Model\NetCare.Domain.Model.csproj", "{A4608667-DA5F-420F-80B0-3088747A9FEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCare.Service", "NetCare.Service", "{19A4EF3C-BCB7-4B70-93BB-5C4A0289CB8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCare.Service", "..\NetCare.Service\NetCare.Service.csproj", "{83E933E4-B288-47EA-B192-4C654E721507}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2CD27E3-B990-452C-A5D3-6BDB7ECEC515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CD27E3-B990-452C-A5D3-6BDB7ECEC515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CD27E3-B990-452C-A5D3-6BDB7ECEC515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CD27E3-B990-452C-A5D3-6BDB7ECEC515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CBAF5A-4341-4C67-B444-108B51B1B961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CBAF5A-4341-4C67-B444-108B51B1B961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CBAF5A-4341-4C67-B444-108B51B1B961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CBAF5A-4341-4C67-B444-108B51B1B961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4608667-DA5F-420F-80B0-3088747A9FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4608667-DA5F-420F-80B0-3088747A9FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4608667-DA5F-420F-80B0-3088747A9FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4608667-DA5F-420F-80B0-3088747A9FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E933E4-B288-47EA-B192-4C654E721507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E933E4-B288-47EA-B192-4C654E721507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E933E4-B288-47EA-B192-4C654E721507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E933E4-B288-47EA-B192-4C654E721507}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5CBAF5A-4341-4C67-B444-108B51B1B961} = {E608CAA4-89EC-4BE8-8288-92E298A4AB47}
+		{A4608667-DA5F-420F-80B0-3088747A9FEE} = {84DB2425-56AD-4052-B5F9-6D0A04279115}
+		{83E933E4-B288-47EA-B192-4C654E721507} = {19A4EF3C-BCB7-4B70-93BB-5C4A0289CB8E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81838310-8821-49BC-A316-08B2B0EB171D}
+	EndGlobalSection
+EndGlobal

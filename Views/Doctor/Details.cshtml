@@ -1,0 +1,64 @@
+﻿@model NetCare.Domain.Model.Doctor
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h2>Details</h2>
+<div>
+    <h4>Doctors</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TitleName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TitleName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Firstname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Firstname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lastname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lastname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HPCSANo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HPCSANo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IDNo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IDNo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Discipline)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Discipline)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Province)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Province)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-IDNo="@Model.IDNo">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
